@@ -11,7 +11,7 @@ import Stack from "@mui/material/Stack";
 // Icons
 import { FaApple, FaFacebook, FaGoogle } from "react-icons/fa";
 
-// PIP INSTALL Dashboard React components
+// AI CORPS Dashboard React components
 import VuiBox from "components/VuiBox";
 import VuiTypography from "components/VuiTypography";
 import VuiInput from "components/VuiInput";
@@ -19,7 +19,7 @@ import VuiButton from "components/VuiButton";
 import VuiSwitch from "components/VuiSwitch";
 import GradientBorder from "examples/GradientBorder";
 
-// PIP INSTALL Dashboard assets
+// AI CORPS Dashboard assets
 import radialGradient from "assets/theme/functions/radialGradient";
 import rgba from "assets/theme/functions/rgba";
 import palette from "assets/theme/base/colors";

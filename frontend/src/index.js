@@ -4,7 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import App from "App";
 import KommunicateChat from "components/Komunicate";
 
-// PIP INSTALL Dashboard React Context Provider
+// AI CORPS Dashboard React Context Provider
 import { VisionUIControllerProvider } from "context";
 
 ReactDOM.render(

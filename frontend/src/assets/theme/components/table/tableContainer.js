@@ -1,7 +1,7 @@
 /*!
 
 =========================================================
-* BudgetBuddy React - v1.0.0
+* DhanSakhi React - v1.0.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/vision-ui-free-react
@@ -16,7 +16,7 @@
 
 */
 
-// PIP INSTALL Dashboard React base styles
+// AI CORPS Dashboard React base styles
 import colors from "assets/theme/base/colors";
 import boxShadows from "assets/theme/base/boxShadows";
 import borders from "assets/theme/base/borders";

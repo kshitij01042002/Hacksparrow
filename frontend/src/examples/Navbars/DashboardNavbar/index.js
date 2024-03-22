@@ -13,12 +13,12 @@ import IconButton from "@mui/material/IconButton";
 import Menu from "@mui/material/Menu";
 import Icon from "@mui/material/Icon";
 
-// PIP INSTALL Dashboard React components
+// AI CORPS Dashboard React components
 import VuiBox from "components/VuiBox";
 import VuiTypography from "components/VuiTypography";
 import VuiInput from "components/VuiInput";
 
-// PIP INSTALL Dashboard React example components
+// AI CORPS Dashboard React example components
 import Breadcrumbs from "examples/Breadcrumbs";
 import NotificationItem from "examples/Items/NotificationItem";
 
@@ -31,7 +31,7 @@ import {
   navbarMobileMenu,
 } from "examples/Navbars/DashboardNavbar/styles";
 
-// PIP INSTALL Dashboard React context
+// AI CORPS Dashboard React context
 import {
   useVisionUIController,
   setTransparentNavbar,

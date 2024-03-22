@@ -4,18 +4,18 @@ import Grid from "@mui/material/Grid";
 import Icon from "@mui/material/Icon";
 import Tooltip from "@mui/material/Tooltip";
 
-// PIP INSTALL Dashboard React components
+// AI CORPS Dashboard React components
 import VuiBox from "components/VuiBox";
 import VuiTypography from "components/VuiTypography";
 import VuiButton from "components/VuiButton";
 
-// PIP INSTALL Dashboard React base styles
+// AI CORPS Dashboard React base styles
 import borders from "assets/theme/base/borders";
 
 // Images
 import colors from "assets/theme/base/colors";
 
-// PIP INSTALL Dashboard component exemples
+// AI CORPS Dashboard component exemples
 import Mastercard from "examples/Icons/Mastercard";
 import Visa from "examples/Icons/Visa";
 
@@ -83,7 +83,7 @@ function PaymentMethod() {
           </Grid>
         </Grid>
       </VuiBox>
-      <VuiBox>
+      {/* <VuiBox>
         <Grid container spacing={3}>
           <Grid item xs={12} md={6}>
             <VuiBox
@@ -133,7 +133,7 @@ function PaymentMethod() {
             
           </Grid>
         </Grid>
-      </VuiBox>
+      </VuiBox> */}
     </Card>
   );
 }

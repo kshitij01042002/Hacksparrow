@@ -6,17 +6,17 @@ import Tab from "@mui/material/Tab";
 import Tabs from "@mui/material/Tabs";
 // Images
 import burceMars from "assets/images/avatar-simmmple.png";
-// PIP INSTALL Dashboard React base styles
+// AI CORPS Dashboard React base styles
 import breakpoints from "assets/theme/base/breakpoints";
 import VuiAvatar from "components/VuiAvatar";
-// PIP INSTALL Dashboard React components
+// AI CORPS Dashboard React components
 import VuiBox from "components/VuiBox";
 import VuiTypography from "components/VuiTypography";
-// PIP INSTALL Dashboard React icons
+// AI CORPS Dashboard React icons
 import { IoCube } from "react-icons/io5";
 import { IoDocument } from "react-icons/io5";
 import { IoBuild } from "react-icons/io5";
-// PIP INSTALL Dashboard React example components
+// AI CORPS Dashboard React example components
 import DashboardNavbar from "examples/Navbars/DashboardNavbar";
 import { useEffect, useState } from "react";
 

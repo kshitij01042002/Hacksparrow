@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 // react-router-dom components
 import { Link } from "react-router-dom";
 
-// PIP INSTALL Dashboard React components
+// AI CORPS Dashboard React components
 import VuiBox from "components/VuiBox";
 import VuiTypography from "components/VuiTypography";
 import VuiInput from "components/VuiInput";
@@ -11,7 +11,7 @@ import VuiButton from "components/VuiButton";
 import VuiSwitch from "components/VuiSwitch";
 import GradientBorder from "examples/GradientBorder";
 
-// PIP INSTALL Dashboard assets
+// AI CORPS Dashboard assets
 import radialGradient from "assets/theme/functions/radialGradient";
 import palette from "assets/theme/base/colors";
 import borders from "assets/theme/base/borders";
@@ -45,7 +45,7 @@ function Plan() {
     const[message, setMessage] = useState("")
 
     function onSubmit(){
-        axios.post("http://ec2-18-234-55-223.compute-1.amazonaws.com:4000/create_budget",{ "income": income}).then((e) => {
+        axios.post("http://localhost:4000/create_budget",{ "income": income}).then((e) => {
             console.log(e)
             setMessage(e.data.generated_text)
         })

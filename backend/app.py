@@ -21,7 +21,7 @@ CORS(app)
 
 chat_sum = " "
 
-geminikey="AIzaSyD17qzyJMl5wjkj79jvpiUSfjA_dv9-dPw"
+geminikey="AIzaSyDMgv3gAQZ0Kx9qtBUwAQoA_PhZXvIF9kY"
 genai.configure(api_key = geminikey)
 
 @app.route('/llm', methods=['POST'])
@@ -38,13 +38,13 @@ def analyze_llm():
     return response.text
 
 @app.route('/send_mail', methods=['POST'])
-def send_mail(name = "Rishabh"):
+def send_mail(name = "Kshitij"):
     category = request.json["category"]
 # Email account credentials
-    body = "\nDear "+name+",\n\nYour expenditure in "+category+" has exceeded the budget limit set for this category. We urge you to take immediate action to address this situation and bring your spending in line with the budget limit. Failure to do so may have a negative impact on your overall financial position and hinder your ability to achieve your financial goals.\n\nAs a budget monitoring company, we understand the importance of financial prudence and effective resource management. We offer budget monitoring and management solutions that can assist you in managing your finances effectively. Please contact us if you require any assistance.\n\nBest regards,\n\nTaher Barwaniwala\nBuddyFinances"
-    sender_email = 'barwaniwalataher6@outlook.com'
-    sender_password = '_Taher@2002'
-    receiver_email = 'tripathirishi80@gmail.com'
+    body = "\nDear "+name+",\n\nYour expenditure in "+category+" has exceeded the budget limit set for this category. We urge you to take immediate action to address this situation and bring your spending in line with the budget limit. Failure to do so may have a negative impact on your overall financial position and hinder your ability to achieve your financial goals.\n\nAs a budget monitoring company, we understand the importance of financial prudence and effective resource management. We offer budget monitoring and management solutions that can assist you in managing your finances effectively. Please contact us if you require any assistance.\n\nBest regards,\n\nTeam Dhan Sakhi"
+    sender_email = 'dhanSakhi@outlook.com'
+    sender_password = 'Kshitij@1234'
+    receiver_email = 'kshitijpatil1098@gmail.com'
 
     # Create message object instance
     message = MIMEMultipart()
@@ -168,7 +168,7 @@ def process_voice_input():
         return jsonify({"user_input": user_input})
     except Exception as e:
         return jsonify({"error": str(e)})
-geminikey = "AIzaSyDeIMfblCzN3zfBl9CBt8n12HvjQYhRANQ"
+geminikey = "AIzaSyDMgv3gAQZ0Kx9qtBUwAQoA_PhZXvIF9kY"
 genai.configure(api_key=geminikey)
 
 @app.route('/get_bot_response', methods=['POST'])
@@ -205,14 +205,14 @@ def splitbillemail():
     l = email.count(',')
     finalamt = int(amt/(l+1))
 
-    geminikey="AIzaSyD17qzyJMl5wjkj79jvpiUSfjA_dv9-dPw"
+    geminikey="AIzaSyDMgv3gAQZ0Kx9qtBUwAQoA_PhZXvIF9kY"
     genai.configure(api_key = geminikey)
 # Email account credentials
     body = """
     Dear friend, <br>
     <br>
     We have some incomplete transactions. You have to pay {} for the bill.<br>
-    You can easily send it on my UPI: taherbarwani@okbuddy
+    You can easily send it on my UPI: dhansakhi@okbuddy
 
     <br>
     <br>
@@ -221,11 +221,11 @@ def splitbillemail():
     <br>
 
     Regards,<br>
-    Taher Barwaniwala,<br>
+    Kshitij Patil,<br>
     Your Friend
     """.format(finalamt)
-    sender_email = 'barwaniwalataher6@outlook.com'
-    sender_password = '_Taher@2002'
+    sender_email = 'dhanSakhi@outlook.com'
+    sender_password = 'Kshitij@1234'
 
     if l > 0:
         emails = email.split(',')
@@ -261,15 +261,15 @@ def splitbillemail():
 
 
 @app.route("/send_point_mail",methods = ["POST"])
-def send_point_mail(receiver_email='barwaniwalataher6@gmail.com'):
+def send_point_mail(receiver_email='kshitijpatil1098@gmail.com'):
     product = request.json["product"]
     type = request.json["type"]
 
 # Email account credentials
-    body = expense_vinci(name='Rishabh', type=type,product = product)
-    sender_email = 'barwaniwalataher6@outlook.com'
-    sender_password = '_Taher@2002'
-    receiver_email = 'tripathirishi80@gmail.com'
+    body = expense_vinci(name='Kshitij', type=type,product = product)
+    sender_email = 'dhanSakhi@outlook.com'
+    sender_password = 'Kshitij@1234'
+    receiver_email = 'kshitijpatil1098@gmail.com'
 
     # Create message object instance
     message = MIMEMultipart()
@@ -321,4 +321,4 @@ def create_budget():
 
 if __name__ == '__main__':
     # send_point_mail()
-    app.run(port=4000)
+    app.run(port=4000, debug=True)

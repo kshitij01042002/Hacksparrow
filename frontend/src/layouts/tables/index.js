@@ -47,7 +47,7 @@ function Tables() {
         <Card>
           <VuiBox display="flex" justifyContent="space-between" alignItems="center">
             <VuiTypography variant="lg" color="white">
-              Projects table
+              This Month's Transactions
             </VuiTypography>
           </VuiBox>
           <VuiBox

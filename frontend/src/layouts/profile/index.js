@@ -13,13 +13,13 @@ import team4 from "assets/images/avatar4.png";
 import profile1 from "assets/images/profile-1.png";
 import profile2 from "assets/images/profile-2.png";
 import profile3 from "assets/images/profile-3.png";
-// PIP INSTALL Dashboard React components
+// AI CORPS Dashboard React components
 // Vision UI Dashboard React components
 import VuiBox from "components/VuiBox";
 import VuiTypography from "components/VuiTypography";
 import ProfileInfoCard from "examples/Cards/InfoCards/ProfileInfoCard";
 import DefaultProjectCard from "examples/Cards/ProjectCards/DefaultProjectCard";
-// PIP INSTALL Dashboard React example components
+// AI CORPS Dashboard React example components
 import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
 // Overview page components
 import Header from "layouts/profile/components/Header";

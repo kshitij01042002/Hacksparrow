@@ -22,7 +22,7 @@ const PieChart = (value) => {
   const chartRef = useRef(null);
   useEffect(async () => {
     let datainfo = {};
-    await getDocs(collection(fs, "kshitij", "February Expense", "transactions"))
+    await getDocs(collection(fs, "kshitij", "March Expense", "transactions"))
       .then((querySnapshot) => {
         const data = [];
         querySnapshot.forEach((doc) => {
@@ -254,7 +254,7 @@ class InvoiceModal extends React.Component {
           <div id="invoiceCapture">
             <div className="d-flex flex-row justify-content-between align-items-start bg-light w-100 p-4">
               <div className="w-100">
-                <h4 className="fw-bold my-2">BudgetBuddy</h4>
+                <h4 className="fw-bold my-2">DhanSakhi</h4>
                 <h6 className="fw-bold text-secondary mb-1">
                   MONTHLY EXPENDITURE
                 </h6>
@@ -338,7 +338,7 @@ class InvoiceModal extends React.Component {
             <div className="p-4 text-end">
               Signed By
               <img
-                src="https://iili.io/JEEICOB.png"
+                src="https://iili.io/JhTW5Yl.png"
                 alt="JEEICOB.png"
                 border="0"
                 style={{ height: "125px", width: "125px" }}

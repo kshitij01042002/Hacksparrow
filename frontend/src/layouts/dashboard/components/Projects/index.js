@@ -1,7 +1,7 @@
 /*!
 
 =========================================================
-* BudgetBuddy React - v1.0.0
+* DhanSakhi React - v1.0.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/vision-ui-free-react
@@ -25,11 +25,11 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import { BsCheckCircleFill } from "react-icons/bs";
 
-// PIP INSTALL Dashboard React components
+// AI CORPS Dashboard React components
 import VuiBox from "components/VuiBox";
 import VuiTypography from "components/VuiTypography";
 
-// PIP INSTALL Dashboard Materail-UI example components
+// AI CORPS Dashboard Materail-UI example components
 import Table from "examples/Tables/Table";
 
 // Data

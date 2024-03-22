@@ -1,7 +1,7 @@
 /*!
 
 =========================================================
-* BudgetBuddy React - v1.0.0
+* DhanSakhi React - v1.0.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/vision-ui-free-react
@@ -30,12 +30,12 @@ import Divider from "@mui/material/Divider";
 import Link from "@mui/material/Link";
 import Icon from "@mui/material/Icon";
 
-// PIP INSTALL Dashboard React components
+// AI CORPS Dashboard React components
 import VuiBox from "components/VuiBox";
 import VuiTypography from "components/VuiTypography";
 import VuiButton from "components/VuiButton";
 
-// PIP INSTALL Dashboard React example components
+// AI CORPS Dashboard React example components
 import SidenavCollapse from "examples/Sidenav/SidenavCollapse";
 // import SidenavCard from "examples/Sidenav/SidenavCard";
 
@@ -43,10 +43,10 @@ import SidenavCollapse from "examples/Sidenav/SidenavCollapse";
 import SidenavRoot from "examples/Sidenav/SidenavRoot";
 import sidenavLogoLabel from "examples/Sidenav/styles/sidenav";
 
-// PIP INSTALL Dashboard React context
+// AI CORPS Dashboard React context
 import { useVisionUIController, setMiniSidenav, setTransparentSidenav } from "context";
 
-// PIP INSTALL Dashboard React icons
+// AI CORPS Dashboard React icons
 import SimmmpleLogo from "examples/Icons/SimmmpleLogo";
 
 // function Sidenav({ color, brand, brandName, routes, ...rest }) {

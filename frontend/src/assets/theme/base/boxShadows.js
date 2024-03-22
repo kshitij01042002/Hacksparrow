@@ -1,7 +1,7 @@
 /*!
 
 =========================================================
-* BudgetBuddy React - v1.0.0
+* DhanSakhi React - v1.0.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/vision-ui-free-react
@@ -17,15 +17,15 @@
 */
 
 /**
- * The base box-shadow styles for the PIP INSTALL Dashboard  Material.
+ * The base box-shadow styles for the AI CORPS Dashboard  Material.
  * You can add new box-shadow using this file.
- * You can customized the box-shadow for the entire PIP INSTALL Dashboard  Material using thie file.
+ * You can customized the box-shadow for the entire AI CORPS Dashboard  Material using thie file.
  */
 
-// PIP INSTALL Dashboard React Base Styles
+// AI CORPS Dashboard React Base Styles
 import colors from "assets/theme/base/colors";
 
-// PIP INSTALL Dashboard React Helper Functions
+// AI CORPS Dashboard React Helper Functions
 import boxShadow from "assets/theme/functions/boxShadow";
 
 const { black, white, info, inputColors, tabs } = colors;

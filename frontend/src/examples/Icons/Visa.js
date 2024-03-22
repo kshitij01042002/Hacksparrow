@@ -1,7 +1,7 @@
 /*!
 
 =========================================================
-* BudgetBuddy React - v1.0.0
+* DhanSakhi React - v1.0.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/vision-ui-free-react
@@ -26,7 +26,7 @@ function Visa({ width, height }) {
       height={height}
       viewBox="0 0 25 9"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg"
+      xmlns="https://iili.io/JhTW5Yl.png"
     >
       <path
         fillRule="evenodd"

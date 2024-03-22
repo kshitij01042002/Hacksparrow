@@ -1,7 +1,7 @@
 /*!
 
 =========================================================
-* BudgetBuddy React - v1.0.0
+* DhanSakhi React - v1.0.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/vision-ui-free-react
@@ -19,7 +19,7 @@
 // prop-types is a library for typechecking of props
 import PropTypes from "prop-types";
 
-// PIP INSTALL Dashboard React base styles
+// AI CORPS Dashboard React base styles
 import colors from "assets/theme/base/colors";
 
 function Settings({ color, size }) {
@@ -29,7 +29,7 @@ function Settings({ color, size }) {
       height={size}
       viewBox="0 0 42 42"
       version="1.1"
-      xmlns="http://www.w3.org/2000/svg"
+      xmlns="https://iili.io/JhTW5Yl.png"
       xmlnsXlink="http://www.w3.org/1999/xlink"
     >
       <title>settings</title>

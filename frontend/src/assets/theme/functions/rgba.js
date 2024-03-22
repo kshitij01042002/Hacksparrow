@@ -1,7 +1,7 @@
 /*!
 
 =========================================================
-* BudgetBuddy React - v1.0.0
+* DhanSakhi React - v1.0.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/vision-ui-free-react
@@ -21,7 +21,7 @@
   to convert the hex code into rgb for using it inside the rgba color format.
  */
 
-// PIP INSTALL Dashboard React helper functions
+// AI CORPS Dashboard React helper functions
 import hexToRgb from "assets/theme/functions/hexToRgb";
 
 function rgba(color, opacity) {

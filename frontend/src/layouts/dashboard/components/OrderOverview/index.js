@@ -1,7 +1,7 @@
 /*!
 
 =========================================================
-* BudgetBuddy React - v1.0.0
+* DhanSakhi React - v1.0.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/vision-ui-free-react
@@ -19,7 +19,7 @@
 // @mui material components
 import Card from "@mui/material/Card";
 
-// PIP INSTALL Dashboard React components
+// AI CORPS Dashboard React components
 import VuiBox from "components/VuiBox";
 import VuiTypography from "components/VuiTypography";
 
@@ -31,11 +31,11 @@ import { FaShoppingCart } from "react-icons/fa";
 import { BsCreditCardFill } from "react-icons/bs";
 import { SiDropbox } from "react-icons/si";
 
-// PIP INSTALL Dashboard React example components
+// AI CORPS Dashboard React example components
 import TimelineItem from "examples/Timeline/TimelineItem";
 import AdobeXD from "examples/Icons/AdobeXD";
 
-// PIP INSTALL Dashboard theme imports
+// AI CORPS Dashboard theme imports
 import palette from "assets/theme/base/colors";
 
 function OrdersOverview() {

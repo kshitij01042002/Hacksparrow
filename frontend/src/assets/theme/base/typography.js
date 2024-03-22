@@ -1,7 +1,7 @@
 /*!
 
 =========================================================
-* BudgetBuddy React - v1.0.0
+* DhanSakhi React - v1.0.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/vision-ui-free-react
@@ -17,17 +17,17 @@
 */
 
 /**
- * The base typography styles for the PIP INSTALL Dashboard  Material.
+ * The base typography styles for the AI CORPS Dashboard  Material.
  * You can add new typography style using this file.
- * You can customized the typography styles for the entire PIP INSTALL Dashboard  Material using thie file.
+ * You can customized the typography styles for the entire AI CORPS Dashboard  Material using thie file.
  */
 
-// PIP INSTALL Dashboard React Base Styles
+// AI CORPS Dashboard React Base Styles
 
 import colors from "assets/theme/base/colors";
 import "./typography.css";
 
-// PIP INSTALL Dashboard React Helper Functions
+// AI CORPS Dashboard React Helper Functions
 import pxToRem from "assets/theme/functions/pxToRem";
 
 const { dark } = colors;

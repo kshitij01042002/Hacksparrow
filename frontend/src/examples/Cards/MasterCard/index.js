@@ -1,7 +1,7 @@
 /*!
 
 =========================================================
-* BudgetBuddy React - v1.0.0
+* DhanSakhi React - v1.0.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/vision-ui-free-react
@@ -20,7 +20,7 @@
 // @mui material components
 import Card from "@mui/material/Card";
 import billingCard from "assets/images/billing-background-card.png";
-// PIP INSTALL Dashboard React components
+// AI CORPS Dashboard React components
 import VuiBox from "components/VuiBox";
 import VuiTypography from "components/VuiTypography";
 import PropTypes from "prop-types";
@@ -53,7 +53,7 @@ function MasterCard({ number, valid, cvv }) {
           sx={{ width: "100%" }}
         >
           <VuiTypography color="white" variant="lg" fontWeight="bold" mr="auto">
-            PIP INSTALL
+            AI CORPS
           </VuiTypography>
           <RiMastercardFill size="48px" color="white" />
         </VuiBox>

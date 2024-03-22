@@ -1,21 +1,21 @@
 // prop-types is a library for typechecking of props
 import PropTypes from "prop-types";
 
-// PIP INSTALL Dashboard React components
+// AI CORPS Dashboard React components
 import VuiBox from "components/VuiBox";
 import VuiTypography from "components/VuiTypography";
 
-// PIP INSTALL Dashboard React example components
+// AI CORPS Dashboard React example components
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import PageLayout from "examples/LayoutContainers/PageLayout";
 
 // Authentication layout components
 import Footer from "layouts/authentication/components/Footer";
 
-// PIP INSTALL Dashboard React theme functions
+// AI CORPS Dashboard React theme functions
 import colors from "assets/theme/base/colors";
 
-// PIP INSTALL Dashboard React theme functions
+// AI CORPS Dashboard React theme functions
 import tripleLinearGradient from "assets/theme/functions/tripleLinearGradient";
 
 function CoverLayout({

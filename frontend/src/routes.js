@@ -1,4 +1,4 @@
-// PIP INSTALL Dashboard React layouts
+// AI CORPS Dashboard React layouts
 import Dashboard from "layouts/dashboard";
 import Tables from "layouts/tables";
 import Billing from "layouts/billing";
@@ -13,7 +13,7 @@ import Stocks from "layouts/stocks";
 import Plan from "layouts/plan";
 import Split from "layouts/split";
 
-// PIP INSTALL Dashboard React icons
+// AI CORPS Dashboard React icons
 import { IoRocketSharp } from "react-icons/io5";
 import { IoIosDocument } from "react-icons/io";
 import { BsFillPersonFill } from "react-icons/bs";

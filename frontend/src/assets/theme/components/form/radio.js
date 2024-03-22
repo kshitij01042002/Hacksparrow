@@ -1,7 +1,7 @@
 /*!
 
 =========================================================
-* BudgetBuddy React - v1.0.0
+* DhanSakhi React - v1.0.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/vision-ui-free-react
@@ -16,11 +16,11 @@
 
 */
 
-// PIP INSTALL Dashboard React base styles
+// AI CORPS Dashboard React base styles
 import borders from "assets/theme/base/borders";
 import colors from "assets/theme/base/colors";
 
-// PIP INSTALL Dashboard React helper functions
+// AI CORPS Dashboard React helper functions
 import pxToRem from "assets/theme/functions/pxToRem";
 import linearGradient from "assets/theme/functions/linearGradient";
 
@@ -59,7 +59,7 @@ export default {
       backgroundColor: transparent.main,
 
       "&.Mui-checked": {
-        backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='15px' width='15px'%3E%3Ccircle cx='50%' cy='50%' r='3' fill='%23fff' /%3E%3C/svg%3E"), ${linearGradient(
+        backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='https://iili.io/JhTW5Yl.png' height='15px' width='15px'%3E%3Ccircle cx='50%' cy='50%' r='3' fill='%23fff' /%3E%3C/svg%3E"), ${linearGradient(
           gradients.dark.main,
           gradients.dark.state
         )}`,
@@ -75,7 +75,7 @@ export default {
       backgroundColor: transparent.main,
 
       "&.Mui-checked": {
-        backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='15px' width='15px'%3E%3Ccircle cx='50%' cy='50%' r='3' fill='%23fff' /%3E%3C/svg%3E"), ${linearGradient(
+        backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='https://iili.io/JhTW5Yl.png' height='15px' width='15px'%3E%3Ccircle cx='50%' cy='50%' r='3' fill='%23fff' /%3E%3C/svg%3E"), ${linearGradient(
           gradients.dark.main,
           gradients.dark.state
         )}`,

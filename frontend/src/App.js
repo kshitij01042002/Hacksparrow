@@ -8,13 +8,13 @@ import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import Icon from "@mui/material/Icon";
 
-// PIP INSTALL Dashboard React components
+// AI CORPS Dashboard React components
 import VuiBox from "components/VuiBox";
 
-// PIP INSTALL Dashboard React example components
+// AI CORPS Dashboard React example components
 import Sidenav from "examples/Sidenav";
 
-// PIP INSTALL Dashboard React themes
+// AI CORPS Dashboard React themes
 import theme from "assets/theme";
 import themeRTL from "assets/theme/theme-rtl";
 
@@ -23,10 +23,10 @@ import rtlPlugin from "stylis-plugin-rtl";
 import { CacheProvider } from "@emotion/react";
 import createCache from "@emotion/cache";
 
-// PIP INSTALL Dashboard React routes
+// AI CORPS Dashboard React routes
 import routes from "routes";
 
-// PIP INSTALL Dashboard React contexts
+// AI CORPS Dashboard React contexts
 import { useVisionUIController, setMiniSidenav, setOpenConfigurator } from "context";
 
 export default function App() {
@@ -98,7 +98,7 @@ export default function App() {
             <Sidenav
               color={sidenavColor}
               brand=""
-              brandName="BudgetBuddy"
+              brandName="DhanSakhi"
               routes={routes}
               onMouseEnter={handleOnMouseEnter}
               onMouseLeave={handleOnMouseLeave}
@@ -122,7 +122,7 @@ export default function App() {
           <Sidenav
             color={sidenavColor}
             brand=""
-            brandName="BudgetBuddy"
+            brandName="DhanSakhi"
             routes={routes}
             onMouseEnter={handleOnMouseEnter}
             onMouseLeave={handleOnMouseLeave}

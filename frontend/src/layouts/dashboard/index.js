@@ -3,19 +3,19 @@ import Grid from "@mui/material/Grid";
 import Icon from "@mui/material/Icon";
 import { Card, LinearProgress, Stack, useScrollTrigger } from "@mui/material";
 
-// PIP INSTALL Dashboard React components
+// AI CORPS Dashboard React components
 import VuiBox from "components/VuiBox";
 import VuiTypography from "components/VuiTypography";
 import VuiProgress from "components/VuiProgress";
 import VuiButton from "components/VuiButton";
 
-// PIP INSTALL Dashboard React example components
+// AI CORPS Dashboard React example components
 import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
 import DashboardNavbar from "examples/Navbars/DashboardNavbar";
 import MiniStatisticsCard from "examples/Cards/StatisticsCards/MiniStatisticsCard";
 import linearGradient from "assets/theme/functions/linearGradient";
 
-// PIP INSTALL Dashboard React base styles
+// AI CORPS Dashboard React base styles
 import typography from "assets/theme/base/typography";
 import colors from "assets/theme/base/colors";
 
@@ -108,7 +108,7 @@ function Dashboard() {
           });
         });
         console.log(data);
-        await axios.post("http://ec2-18-234-55-223.compute-1.amazonaws.com:4000/llm", data).then((e) => {
+        await axios.post("http://localhost:4000/llm", data).then((e) => {
           setSuggestion(e.data);
         });
         console.log("dasda")
