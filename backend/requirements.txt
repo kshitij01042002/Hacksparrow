@@ -1,0 +1,9 @@
+flask
+requests
+flask-cors
+numpy
+pandas
+openai
+statsmodels
+google-generativeai
+SpeechRecognition
