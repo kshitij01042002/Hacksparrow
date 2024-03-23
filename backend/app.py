@@ -89,7 +89,7 @@ def space_file():
         return {'error': result['ErrorMessage']}
     else:
         pf = f"{result['ParsedResults'][0]['ParsedText']} You are a financial advisor analyse this find the cost, product and classify it into one of this category [bills, grocery, education, misc, investment, medical]. Give the output as cost, product, category Give me comma separated values. give strictly in this format. Don't give me in key-value pair"
-        model = genai.GenerativeModel('gemini-1.0-pro')
+        model = genai.GenerativeModel('gemini-1.0')
         instructions = model.generate_content(pf)
         print(instructions.text)
         return instructions.text.split(',')
@@ -168,7 +168,7 @@ def process_voice_input():
         return jsonify({"user_input": user_input})
     except Exception as e:
         return jsonify({"error": str(e)})
-geminikey = "AIzaSyAt7Gn2r1MEvrtrwBbZht1Y5G3b9csLBgk"
+geminikey = "AIzaSyAlst57CTZjO6--rxGF9RgbIg0HJtzN_RE"
 genai.configure(api_key=geminikey)
 
 @app.route('/get_bot_response', methods=['POST'])
@@ -209,7 +209,7 @@ def splitbillemail():
     l = email.count(',')
     finalamt = int(amt/(l+1))
 
-    geminikey="AIzaSyAt7Gn2r1MEvrtrwBbZht1Y5G3b9csLBgk"
+    geminikey="AIzaSyAlst57CTZjO6--rxGF9RgbIg0HJtzN_RE"
     genai.configure(api_key = geminikey)
 # Email account credentials
     body = """
