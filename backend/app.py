@@ -21,7 +21,7 @@ CORS(app)
 
 chat_sum = " "
 
-geminikey="AIzaSyAlst57CTZjO6--rxGF9RgbIg0HJtzN_RE"
+geminikey="AIzaSyBJ4ErCqXoKSH5j3ktfdY0-2bzaokMtkBs"
 genai.configure(api_key = geminikey)
 
 @app.route('/llm', methods=['POST'])
@@ -168,7 +168,7 @@ def process_voice_input():
         return jsonify({"user_input": user_input})
     except Exception as e:
         return jsonify({"error": str(e)})
-geminikey = "AIzaSyAlst57CTZjO6--rxGF9RgbIg0HJtzN_RE"
+geminikey = "AIzaSyBJ4ErCqXoKSH5j3ktfdY0-2bzaokMtkBs"
 genai.configure(api_key=geminikey)
 
 @app.route('/get_bot_response', methods=['POST'])
@@ -209,7 +209,7 @@ def splitbillemail():
     l = email.count(',')
     finalamt = int(amt/(l+1))
 
-    geminikey="AIzaSyAlst57CTZjO6--rxGF9RgbIg0HJtzN_RE"
+    geminikey="AIzaSyBJ4ErCqXoKSH5j3ktfdY0-2bzaokMtkBs"
     genai.configure(api_key = geminikey)
 # Email account credentials
     body = """
