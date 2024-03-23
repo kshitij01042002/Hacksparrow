@@ -4,6 +4,7 @@ import {v4 as uuid} from "uuid";
 import {toast} from "react-toastify";
 import {NavMenu, Footer} from "../components";
 import {useQuiz} from "../context/quiz-context";
+import axios from "axios";
 
 const Result = () => {
   const {quizState} = useQuiz();
@@ -24,6 +25,7 @@ const Result = () => {
       title: quizTitle,
       score: quizState.totalScore,
     };
+    console.log(quizState)
     const prevAllScores = JSON.parse(localStorage.getItem("quizScores"));
     prevAllScores === null
       ? localStorage.setItem("quizScores", JSON.stringify([currentQuizScore]))
@@ -31,6 +33,12 @@ const Result = () => {
           "quizScores",
           JSON.stringify([currentQuizScore, ...prevAllScores])
         );
+
+      axios
+        .post("http://localhost:4000/quiz", { user_selections: quizState.userSelectedOptions })
+        .then((data) => {
+          console.log(data);
+        });
   }, [quizState.totalScore]);
   return (
     <>
