@@ -64,7 +64,7 @@ createServer(
                         {option: "Derivatives", isCorrect: false},
                         {option: "Bonus", isCorrect: true},
                       ],
-                    },
+                    }
                   ],
                 },
                 {
@@ -127,20 +127,6 @@ createServer(
                     },
                   ],
                 },
-              ],
-            },
-            {
-              id: 2,
-              categoryName: "Real Estate",
-              categoryImg:
-                "https://assetpoint.netlify.app/images/real-estate.jpg",
-              allQuiz: [],
-            },
-            {
-              id: 3,
-              categoryName: "Finance",
-              categoryImg: "https://assetpoint.netlify.app/images/general.jpg",
-              allQuiz: [
                 {
                   id: uuid(),
                   quizTitle: "Basics of Finance",
@@ -204,13 +190,74 @@ createServer(
                       ],
                     },
                   ],
-                },
+                }
               ],
             },
-          ],
-        };
-      });
-    },
+            {
+              id: 2,
+              categoryName: "Evaluate Your Financial Sentiment",
+              categoryImg: "https://assetpoint.netlify.app/images/stock.jpg",
+              allQuiz: [
+                {
+                  id: uuid(),
+                  quizTitle: "Financial Sentiment Analysis",
+                  quizData: [
+                    {
+                      id: uuid(),
+                      question: "How often do you make impulse purchases?",
+                      options: [
+                        {
+                          option: " Rarely or Never", isCorrect: true,
+                        },
+                        {option: "Occasionally ", isCorrect: true},
+                        {option: " Frequently", isCorrect: false},
+                      ],
+                    },
+                    {
+                      id: uuid(),
+                      question: "When faced with a sale or discount, what is your typical reaction?",
+                      options: [
+                        {option: "I carefully evaluate if I need the item before making a purchase", isCorrect: true},
+                        {option: "ShaI consider buying even if I don't need it, but try to control myselfres", isCorrect: true},
+                        {option: "I often succumb to the temptation and make the purchase impulsively Gold", isCorrect: false},
+                      ],
+                    },
+                    {
+                      id: uuid(),
+                      question: "How do you feel after making a big purchase?",
+                      options: [
+                        {option: "Satisfied and content", isCorrect: true},
+                        {option: "Slightly guilty or anxious", isCorrect: true},
+                        {option:"Regretful or stressed", isCorrect:false},
+                      ],
+                    },
+                    {
+                      id: uuid(),
+                      question: "How do you plan for major expenses, such as vacations or home renovations?",
+                      options: [
+                        {option: "I create a detailed budget and save up for expenses in advance", isCorrect: true},
+                        {option: "I plan somewhat but may rely on credit or loans for certain expenses", isCorrect: true},
+                        {option: "I tend to overspend and worry about the financial consequences later", isCorrect: false},
+                      ],
+                    },
+                    {
+                      id: uuid(),
+                      question:
+                        "When making a purchase decision, what influences you the most?",
+                      options: [
+                        {option: "Rational considerations such as utility and necessity", isCorrect: true},
+                        {option: "Social influences or peer pressure ", isCorrect: true},
+                        {option: "Emotional appeal or instant gratification ", isCorrect: false},
+                      ],
+                    }
+                  ],
+                   
+                
+              },
+            ],
+          },
+        ],
+      };
+    });
   },
-  {timing: 4000}
-);
+}, { timing: 4000 });
