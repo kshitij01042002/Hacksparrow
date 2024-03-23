@@ -21,7 +21,7 @@ CORS(app)
 
 chat_sum = " "
 
-geminikey="AIzaSyDMgv3gAQZ0Kx9qtBUwAQoA_PhZXvIF9kY"
+geminikey="AIzaSyAt7Gn2r1MEvrtrwBbZht1Y5G3b9csLBgk"
 genai.configure(api_key = geminikey)
 
 @app.route('/llm', methods=['POST'])
@@ -31,7 +31,7 @@ def analyze_llm():
                 Suggest where user can save his money.
                 Give the analysis of the spendings in two paragraphs
             '''
-    model = genai.GenerativeModel('gemini-1.0-pro')
+    model = genai.GenerativeModel('gemini-1.0')
     response = model.generate_content(pf)
     print(response.text)
     print(type(response.text))
@@ -168,15 +168,14 @@ def process_voice_input():
         return jsonify({"user_input": user_input})
     except Exception as e:
         return jsonify({"error": str(e)})
-geminikey = "AIzaSyDMgv3gAQZ0Kx9qtBUwAQoA_PhZXvIF9kY"
+geminikey = "AIzaSyAt7Gn2r1MEvrtrwBbZht1Y5G3b9csLBgk"
 genai.configure(api_key=geminikey)
 
 @app.route('/get_bot_response', methods=['POST'])
 def get_bot_response():
-    user_message = request.json.get('userMessage', '')
+    user_message = request.json.get('userMessage', ''),
+    print("dqwwxe2ew")
 
-
-    
     # Use Gem AI to generate a response
     pf = f'''You are a finance chatbot and you are supposed to extract, the amount in number that the user has spent, along with the category and the product of the expense. Reply with comma seperated string
             Select the category: Bills, Education, Food ,Investment, Medical, Misc
@@ -186,13 +185,18 @@ def get_bot_response():
             output: 100, ice cream, Food
 
             Sentence = {user_message}'''
+    print(pf)
     model = genai.GenerativeModel('gemini-1.0-pro')
     response = model.generate_content(pf)
-    generated_text = response.text
+    print(response.text)
 
+    pf = f'''Compare the price of {response.text} with average price of it in indian rupees and applaud user if he has spent below the average price or else suggest how the user can improve in under 50 words. Give the response in such a way that you are addressing the user'''
+
+    response1 = model.generate_content(pf)
+
+    generated_text = response1.text
     items = generated_text.split(',')
 
-    
     # Return the generated response from Gem AI
     return jsonify({'botResponse': generated_text})
 
@@ -205,7 +209,7 @@ def splitbillemail():
     l = email.count(',')
     finalamt = int(amt/(l+1))
 
-    geminikey="AIzaSyDMgv3gAQZ0Kx9qtBUwAQoA_PhZXvIF9kY"
+    geminikey="AIzaSyAt7Gn2r1MEvrtrwBbZht1Y5G3b9csLBgk"
     genai.configure(api_key = geminikey)
 # Email account credentials
     body = """
@@ -315,11 +319,7 @@ def create_budget():
         financial_goal = request.json["goal"]
         time = request.json["time"]
         
-        pf = f"I have {data} rupees, help me create a budget for this " \
-            "month for my education, medical, investment, groceries, misc and " \
-            f"bills for a month. I am a {risk} investor and I want to invest in {investment} for {time} years. " \
-            f"I have a financial goal of {financial_goal}. " \
-            "Also give me an investment plan for this month."
+        pf = f"I have {data} rupees, help me create a budget for this month for my education, medical, investment, groceries, misc and bills for a month. I am a {risk} investor and I want to invest in {investment} for {time} years. I have a financial goal of {financial_goal}. Also give me an investment plan for this month."
         
         model = genai.GenerativeModel('gemini-pro')
         response = model.generate_content(pf)

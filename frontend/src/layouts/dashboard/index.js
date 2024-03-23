@@ -53,7 +53,6 @@ import { onValue, ref } from "firebase/database";
 import InvoiceModal from "./components/Agreement/Agreement";
 
 function Dashboard() {
-
   const { gradients } = colors;
   const { cardContent } = gradients;
 
@@ -111,7 +110,7 @@ function Dashboard() {
         await axios.post("http://localhost:4000/llm", data).then((e) => {
           setSuggestion(e.data);
         });
-        console.log("dasda")
+        console.log("dasda");
       } catch (error) {
         console.log("Error getting documents: ", error);
       }
@@ -237,7 +236,7 @@ function Dashboard() {
         </VuiBox>
         <VuiBox mb={3}>
           <Grid container spacing={3}>
-            <Grid item xs={12} lg={6} xl={7}>
+            {/* <Grid item xs={12} lg={6} xl={7}>
               <Card>
                 <VuiBox sx={{ height: "100%" }}>
                   <VuiTypography
@@ -249,18 +248,18 @@ function Dashboard() {
                     Sales Overview
                   </VuiTypography>
                   <VuiBox mt={4} mb={1}>
-                    {/* <VuiButton color="info" fullWidth onClick={onSubmit}>
+                    <VuiButton color="info" fullWidth onClick={onSubmit}>
                     Forecast
-                  </VuiButton> */}
+                  </VuiButton>
                   </VuiBox>
-                  {/* <VuiBox display="flex" alignItems="center" mb="40px">
+                  <VuiBox display="flex" alignItems="center" mb="40px">
                     <VuiTypography variant="button" color="success" fontWeight="bold">
                       +5% more{" "}
                       <VuiTypography variant="button" color="text" fontWeight="regular">
                         in 20251
                       </VuiTypography>
                     </VuiTypography>
-                  </VuiBox> */}
+                  </VuiBox>
                   <VuiBox sx={{ height: "310px" }}>
                     <LineChart
                       lineChartData={lineChartDataDashboard}
@@ -269,8 +268,8 @@ function Dashboard() {
                   </VuiBox>
                 </VuiBox>
               </Card>
-            </Grid>
-            <Grid item xs={12} lg={6} xl={5}>
+            </Grid> */}
+            {/* <Grid item xs={12} lg={6} xl={5}>
               <Card>
                 <VuiBox>
                   <VuiBox
@@ -482,7 +481,7 @@ function Dashboard() {
                   </Grid>
                 </VuiBox>
               </Card>
-            </Grid>
+            </Grid> */}
           </Grid>
         </VuiBox>
       </VuiBox>

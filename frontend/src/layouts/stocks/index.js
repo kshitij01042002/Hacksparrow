@@ -125,7 +125,6 @@ const ChatPage = () => {
         });
         console.log("transaction saved")
 
-
         //
         setChatMessages((prevMessages) => [
           ...prevMessages,
