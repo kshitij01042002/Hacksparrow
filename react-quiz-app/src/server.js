@@ -218,7 +218,7 @@ createServer(
                       question: "When faced with a sale or discount, what is your typical reaction?",
                       options: [
                         {option: "I carefully evaluate if I need the item before making a purchase", isCorrect: true},
-                        {option: "ShaI consider buying even if I don't need it, but try to control myselfres", isCorrect: true},
+                        {option: "ShaI consider buying even if I don't need it, but try to control myself", isCorrect: true},
                         {option: "I often succumb to the temptation and make the purchase impulsively Gold", isCorrect: false},
                       ],
                     },
