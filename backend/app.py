@@ -21,7 +21,7 @@ CORS(app)
 
 chat_sum = " "
 
-geminikey="AIzaSyAt7Gn2r1MEvrtrwBbZht1Y5G3b9csLBgk"
+geminikey="AIzaSyAlst57CTZjO6--rxGF9RgbIg0HJtzN_RE"
 genai.configure(api_key = geminikey)
 
 @app.route('/llm', methods=['POST'])
