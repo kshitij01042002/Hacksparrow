@@ -297,6 +297,51 @@ createServer(
                         },
                       ],
                     },
+                    {
+                      id: uuid(),
+                      question: "How do you feel about saving money for the future?",
+                      options: [
+                        {option: "I prioritize saving for the future and have specific financial goals", isCorrect: true},
+                        {option: " I understand the importance of saving but find it challenging to save consistently", isCorrect: true},
+                        {option:"I prefer spending money now rather than saving for the future ", isCorrect:false},
+                      ],
+                    },
+                    {
+                      id: uuid(),
+                      question: "Do you track your daily expenses and budget?",
+                      options: [
+                        {option: "Yes, I have a detailed budget and track all expenses regularly", isCorrect: true},
+                        {option: "I try to track my expenses but not very consistently ", isCorrect: true},
+                        {option:"No, I don't track my expenses or budget at all ", isCorrect:false},
+                      ],
+                    },
+                    {
+                      id: uuid(),
+                      question: "How do you feel after making a big purchase?",
+                      options: [
+                        {option: "Satisfied and content", isCorrect: true},
+                        {option: "Slightly guilty or anxious", isCorrect: true},
+                        {option:"Regretful or stressed", isCorrect:false},
+                      ],
+                    },
+                    {
+                      id: uuid(),
+                      question: "What role does stress or emotional state play in your spending habits?",
+                      options: [
+                        {option: "I'm able to control my spending regardless of my emotional state ", isCorrect: true},
+                        {option: "I occasionally make impulse purchases when feeling stressed or emotional", isCorrect: true},
+                        {option:"I often resort to retail therapy or impulse buying to cope with stress or emotions", isCorrect:false},
+                      ],
+                    },
+                    {
+                      id: uuid(),
+                      question: "How do you feel about seeking professional financial advice or guidance?",
+                      options: [
+                        {option: "I actively seek out financial advice and see it as a valuable resource", isCorrect: true},
+                        {option: "I'm open to the idea but haven't yet sought professional advice ", isCorrect: true},
+                        {option:" I prefer to handle my finances independently and avoid seeking outside help ", isCorrect:false},
+                      ],
+                    },
                   ],
                 },
               ],
