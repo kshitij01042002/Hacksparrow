@@ -309,15 +309,24 @@ def expense_vinci(name, type, product):
 
 @app.route('/create_budget', methods=['POST'])
 def create_budget():
-    data = request.json["income"]
-    
-    pf=f"I have {data} dollars, help me create a budget for this month for my education, medical, investment, groceries, misc and bills for a month.Dont give bold output, keep it plain font"
-    model = genai.GenerativeModel('gemini-pro')
-    response = model.generate_content(pf)
-    generated_text = response.text
+        data = request.json["income"]
+        risk = request.json["risk"]
+        investment = request.json["investments"]
+        financial_goal = request.json["goal"]
+        time = request.json["time"]
+        
+        pf = f"I have {data} rupees, help me create a budget for this " \
+            "month for my education, medical, investment, groceries, misc and " \
+            f"bills for a month. I am a {risk} investor and I want to invest in {investment} for {time} years. " \
+            f"I have a financial goal of {financial_goal}. " \
+            "Also give me an investment plan for this month."
+        
+        model = genai.GenerativeModel('gemini-pro')
+        response = model.generate_content(pf)
+        generated_text = response.text
 
-    print(generated_text)
-    return {'generated_text': generated_text}
+        print(generated_text)
+        return {'generated_text': generated_text}
 
 if __name__ == '__main__':
     # send_point_mail()

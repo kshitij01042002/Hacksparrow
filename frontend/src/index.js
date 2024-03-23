@@ -11,7 +11,7 @@ ReactDOM.render(
   <BrowserRouter>
     <VisionUIControllerProvider>
       <App />
-      <KommunicateChat />
+      {/* <KommunicateChat /> */}
     </VisionUIControllerProvider>
   </BrowserRouter>,
   document.getElementById("root")

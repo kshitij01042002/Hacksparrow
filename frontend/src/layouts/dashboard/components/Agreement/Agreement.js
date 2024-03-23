@@ -175,7 +175,7 @@ class InvoiceModal extends React.Component {
   };
 
   GenerateTransactions = () => {
-    getDocs(collection(fs, "kshitij", "February Expense", "transactions"))
+    getDocs(collection(fs, "kshitij", "March Expense", "transactions"))
       .then((querySnapshot) => {
         const data = [];
         querySnapshot.forEach((doc) => {

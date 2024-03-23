@@ -1,20 +1,29 @@
 import { useState, useEffect } from "react";
+import VuiButton from "components/VuiButton";
 
-const NavbarDarkExample = ({ options, onSelect }) => {
-    const [selectedOption, setSelectedOption] = useState(null);
-    const [isOpen, setIsOpen] = useState(false);
-  
-    const handleOptionClick = (option) => {
-      setSelectedOption(option);
-      onSelect(option);
-      setIsOpen(false);
-    };
-  
-    return (
-      <div className="dropdown">
-        <button onClick={() => setIsOpen(!isOpen)}>
-          {selectedOption ? selectedOption.label : 'Select an option'}
-        </button>
+const NavbarDarkExample = ({ options, onSelect, label }) => {
+  const [selectedOption, setSelectedOption] = useState(null);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleOptionClick = (option) => {
+    setSelectedOption(option);
+    onSelect(option);
+    setIsOpen(false);
+  };
+
+  return (
+    <div className="dropdown">
+      <VuiButton
+        color="white"
+        variant="outlined"
+        fullWidth
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        <div style={{ fontSize: 18 }}>
+          {selectedOption ? selectedOption.label : "Select " + label}
+        </div>
+      </VuiButton>
+      <div style={{color: "white"}}>
         {isOpen && (
           <ul>
             {options.map((option) => (
@@ -25,7 +34,8 @@ const NavbarDarkExample = ({ options, onSelect }) => {
           </ul>
         )}
       </div>
-    );
-  };
-  
+    </div>
+  );
+};
+
 export default NavbarDarkExample;

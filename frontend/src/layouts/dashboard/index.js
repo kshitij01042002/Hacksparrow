@@ -101,7 +101,7 @@ function Dashboard() {
       try {
         let data = [];
         await getDocs(
-          collection(fs, "kshitij", "February Expense", "transactions")
+          collection(fs, "kshitij", "March Expense", "transactions")
         ).then((data1) => {
           data1.forEach((doc) => {
             data.push(doc);
