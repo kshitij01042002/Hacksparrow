@@ -1,0 +1,21 @@
+.quiz-card-ctn {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.quiz-card-ctn .quiz-card {
+    width: 20rem;
+    box-shadow: 0 2px 20px var(--black-soft);
+    overflow: hidden;
+    background-color: var(--clr-white);
+}
+.quiz-card-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.quiz-card-content p {
+    color: var(--clr-txt-dark);
+}

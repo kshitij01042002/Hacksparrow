@@ -21,6 +21,7 @@ import { IoBuild } from "react-icons/io5";
 import { BsCreditCardFill } from "react-icons/bs";
 import { IoStatsChart } from "react-icons/io5";
 import { IoHome } from "react-icons/io5";
+import quiz from "layouts/quiz/quiz";
 
 const routes = [
   {
@@ -48,6 +49,15 @@ const routes = [
     route: "/billing",
     icon: <BsCreditCardFill size="15px" color="inherit" />,
     component: Billing,
+    noCollapse: true,
+  },
+  {
+    type: "collapse",
+    name: "Quiz",
+    key: "quiz",
+    route: "/quiz",
+    icon: <BsCreditCardFill size="15px" color="inherit" />,
+    component: quiz,
     noCollapse: true,
   },
   { type: "title", title: "Account Pages", key: "account-pages" },
