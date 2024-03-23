@@ -1,0 +1,21 @@
+.quiz-board-ctn {
+    width: 100%;
+    max-width: 800px;
+    margin: 1rem auto;
+}
+
+.score-ctn {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--clr-primary-light);
+}
+
+@media screen and (max-width: 800px) {
+    .quiz-board-ctn {
+        width: 90%;
+    }
+
+    .quiz-board-ctn .score-ctn p.para-lg {
+        font-size: 1.25rem;
+    }
+}

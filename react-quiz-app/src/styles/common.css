@@ -1,0 +1,138 @@
+@import "https://litespeedui.netlify.app/components/components.css";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Parisienne&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css");
+
+body {
+  font-family: "Inter", sans-serif;
+  color: var(--clr-txt-dark);
+  background-color: #f7f7f7;
+}
+
+ul {
+  list-style: none;
+}
+
+.mg-bottom-lg {
+  margin-bottom: 2rem;
+}
+
+.app-ctn {
+  min-height: calc(100vh - 10rem);
+}
+
+/* main nav menu */
+header {
+  background-color: var(--clr-white);
+  box-shadow: var(--light-shadow);
+  padding: 0.625rem 0;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+.header-container {
+  width: 90%;
+  max-width: 1500px;
+  margin: auto;
+}
+
+nav.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav.main-nav h1.logo {
+  font-family: "Parisienne", cursive;
+  color: var(--clr-primary);
+}
+
+nav.main-nav .search-bar {
+  border: 2px solid var(--light-gray);
+  width: 400px;
+}
+
+nav.main-nav .search-bar span.material-icons {
+  color: var(--badge-offline);
+  padding: 0 0.875rem;
+}
+
+nav.main-nav .search-bar input {
+  border: none;
+}
+
+nav.main-nav .search-bar,
+nav.main-nav ul.right-nav {
+  display: flex;
+  align-items: center;
+}
+
+nav.main-nav ul.right-nav li {
+  padding-left: 2rem;
+  cursor: pointer;
+}
+
+.link-primary {
+  color: var(--clr-primary);
+}
+
+.link-primary span.profile {
+  font-size: 1.75rem;
+}
+
+@media screen and (max-width: 800px) {
+  nav.main-nav .search-bar {
+    order: 1;
+    flex-grow: 1;
+  }
+
+  nav.main-nav ul.right-nav li {
+    padding-left: 1rem;
+  }
+}
+
+/* footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--clr-primary);
+  color: var(--clr-white);
+  padding: 2rem 0;
+}
+
+footer .footer-links a {
+  color: var(--clr-white);
+  padding-right: 0.875rem;
+  font-size: 1.5rem;
+}
+
+footer p.copyright {
+  font-size: 0.875rem;
+}
+
+/* loader */
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid var(--clr-primary);
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  }
+
+  @keyframes rotation {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+  } 
