@@ -107,17 +107,17 @@ function Plan() {
         premotto="DON'T SPEND MUCH"
         image={bgSignIn}
       >
-        <div style={{margin: "10px"}}>
+        {/* <div style={{margin: "10px"}}>
         <NavbarDarkExample options={riskOptions} onSelect={handlerisk} label="Risk Tolerance"/>
-        </div>
+        </div> */}
 
-        <NavbarDarkExample
+        {/* <NavbarDarkExample
           options={investmentOptions}
           onSelect={handleInvestments}
           label="Investment Preference"
-        />
-
-        <VuiBox mb={2}>
+        /> */}
+      
+        {/* <VuiBox mb={2}>
           <VuiBox mb={1} ml={0.5}>
             <VuiTypography
               component="label"
@@ -149,7 +149,7 @@ function Plan() {
               })}
             />
           </GradientBorder>
-        </VuiBox>
+        </VuiBox> */}
 
 <VuiBox mb={2}>
   <VuiBox mb={1} ml={0.5}>
@@ -184,16 +184,62 @@ function Plan() {
     />
   </GradientBorder>
 </VuiBox>
+<VuiBox mb={2}>
+          <VuiBox mb={1} ml={0.5}>
+            <VuiTypography
+              component="label"
+              variant="button"
+              color="white"
+              fontWeight="medium"
+            >
+              Enter the time period in months...
+            </VuiTypography>
+          </VuiBox>
+          <GradientBorder
+            minWidth="100%"
+            padding="1px"
+            borderRadius={borders.borderRadius.lg}
+            backgroundImage={radialGradient(
+              palette.gradients.borderLight.main,
+              palette.gradients.borderLight.state,
+              palette.gradients.borderLight.angle
+            )}
+          >
+            <VuiInput
+              value={time}
+              onChange={(e) => setTime(e.target.value)}
+              required
+              type="number"
+              placeholder="Enter the Time Period in months..."
+              sx={({ typography: { size } }) => ({
+                fontSize: size.sm,
+              })}
+            />
+          </GradientBorder>
+        </VuiBox>
 
         <VuiTypography
-          color="text"
-          fontWeight="bold"
-          textAlign="center"
-          mb="14px"
-          sx={({ typography: { size } }) => ({ fontSize: size.lg })}
-        >
-          <pre>{message}</pre>
+         color="text"
+         fontWeight="bold"
+         textAlign="center"
+         mb="14px"
+         sx={({ typography: { size } }) => ({ fontSize: size.lg })}
+       >
+         {message && (
+           <div style={{ maxWidth: '1200px' }}>
+             <p style={{ textAlign: 'left' }}>
+               <strong>Financial Plan:</strong>
+             </p>
+             <ul style={{ paddingLeft: '20px', textAlign: 'left' }}>
+               {message.split('\n').map((line, index) => (
+                 <li key={index}>{line.replace(/\*/g, '')}</li>
+               ))}
+             </ul>
+           </div>
+         )}
         </VuiTypography>
+      
+       
 
 
         <VuiBox mt={4} mb={1}>

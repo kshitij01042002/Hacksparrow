@@ -4,6 +4,7 @@ import App from "./App";
 import "./server";
 import {BrowserRouter as Router} from "react-router-dom";
 import {QuizProvider} from "./context/quiz-context";
+import 'tachyons';
 
 ReactDOM.render(
   <React.StrictMode>
