@@ -21,7 +21,7 @@ CORS(app)
 
 chat_sum = " "
 
-geminikey="AIzaSyBJ4ErCqXoKSH5j3ktfdY0-2bzaokMtkBs"
+geminikey="AIzaSyCsB6jwc3UNzoS5-O8ho_OEjucrAuVm7_A"
 genai.configure(api_key = geminikey)
 
 @app.route('/llm', methods=['POST'])
@@ -168,7 +168,7 @@ def process_voice_input():
         return jsonify({"user_input": user_input})
     except Exception as e:
         return jsonify({"error": str(e)})
-geminikey = "AIzaSyBJ4ErCqXoKSH5j3ktfdY0-2bzaokMtkBs"
+geminikey = "AIzaSyCsB6jwc3UNzoS5-O8ho_OEjucrAuVm7_A"
 genai.configure(api_key=geminikey)
 
 @app.route('/get_bot_response', methods=['POST'])
@@ -209,7 +209,7 @@ def splitbillemail():
     l = email.count(',')
     finalamt = int(amt/(l+1))
 
-    geminikey="AIzaSyBJ4ErCqXoKSH5j3ktfdY0-2bzaokMtkBs"
+    geminikey="AIzaSyCsB6jwc3UNzoS5-O8ho_OEjucrAuVm7_A"
     genai.configure(api_key = geminikey)
 # Email account credentials
     body = """
@@ -320,6 +320,106 @@ def create_budget():
         time = request.json["time"]
         
         pf = f"I have {data} rupees, help me create a budget for this month for my education, medical, investment, groceries, misc and bills for a month. I am a {risk} investor and I want to invest in {investment} for {time} years. I have a financial goal of {financial_goal}. Also give me an investment plan for this month."
+        
+        model = genai.GenerativeModel('gemini-pro')
+        response = model.generate_content(pf)
+        generated_text = response.text
+
+        print(generated_text)
+        return {'generated_text': generated_text}
+
+
+@app.route('/quiz', methods=['POST'])
+def quiz():
+        data = request.json["user_selections"]
+
+        quizQuestions = [
+                    {
+                      "question": "How often do you make impulse purchases?",
+                      "options": [
+                        {
+                          "option": " Rarely or Never",
+                          "isCorrect": "true",
+                        },
+                        { "option": "Occasionally ", "isCorrect": "true" },
+                        { "option": " Frequently", "isCorrect": "false" },
+                      ],
+                    },
+                    {
+                      "question":
+                        "When faced with a sale or discount, what is your typical reaction?",
+                      "options": [
+                        {
+                          "option":
+                            "I carefully evaluate if I need the item before making a purchase",
+                          "isCorrect": "true",
+                        },
+                        {
+                          "option":
+                            "ShaI consider buying even if I don't need it, but try to control myselfres",
+                          "isCorrect": "true",
+                        },
+                        {
+                          "option":
+                            "I often succumb to the temptation and make the purchase impulsively Gold",
+                          "isCorrect": "false",
+                        },
+                      ],
+                    },
+                    {
+                      "question": "How do you feel after making a big purchase?",
+                      "options": [
+                        { "option": "Satisfied and content", "isCorrect": "true" },
+                        {
+                          "option": "Slightly guilty or anxious",
+                          "isCorrect": "true",
+                        },
+                        { "option": "Regretful or stressed", "isCorrect": "false" },
+                      ],
+                    },
+                    {
+                      "question":
+                        "How do you plan for major expenses, such as vacations or home renovations?",
+                      "options": [
+                        {
+                          "option":
+                            "I create a detailed budget and save up for expenses in advance",
+                          "isCorrect": "true",
+                        },
+                        {
+                          "option":
+                            "I plan somewhat but may rely on credit or loans for certain expenses",
+                          "isCorrect": "true",
+                        },
+                        {
+                          "option":
+                            "I tend to overspend and worry about the financial consequences later",
+                          "isCorrect": "false",
+                        },
+                      ],
+                    },
+                    {
+                      "question":
+                        "When making a purchase decision, what influences you the most?",
+                      "options": [
+                        {
+                          "option":
+                            "Rational considerations such as utility and necessity",
+                          "isCorrect": "true",
+                        },
+                        {
+                          "option": "Social influences or peer pressure ",
+                          "isCorrect": "true",
+                        },
+                        {
+                          "option": "Emotional appeal or instant gratification ",
+                          "isCorrect": "false",
+                        },
+                      ],
+                    },
+                  ]
+        
+        pf = f"The user was given following set of questions {quizQuestions} and the user selected {data}. Analyze the user's spending pattern based on the user's selections and do sentimental analysis of the user based on the user's selections."
         
         model = genai.GenerativeModel('gemini-pro')
         response = model.generate_content(pf)

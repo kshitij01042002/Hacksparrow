@@ -85,8 +85,12 @@ import {v4 as uuid} from "uuid";
 import {toast} from "react-toastify";
 import {NavMenu, Footer} from "../components";
 import {useQuiz} from "../context/quiz-context";
+<<<<<<< HEAD
 import Card from "../components/Card";
 
+=======
+import axios from "axios";
+>>>>>>> 46c90e5a46859704b799b90977ae188308f384bb
 
 const Result = () => {
   const [title, setTitle] = useState("")
@@ -110,7 +114,11 @@ const Result = () => {
       title: quizTitle,
       score: quizState.totalScore,
     };
+<<<<<<< HEAD
     console.log(quizTitle)
+=======
+    console.log(quizState)
+>>>>>>> 46c90e5a46859704b799b90977ae188308f384bb
     const prevAllScores = JSON.parse(localStorage.getItem("quizScores"));
     prevAllScores === null
       ? localStorage.setItem("quizScores", JSON.stringify([currentQuizScore]))
@@ -118,12 +126,22 @@ const Result = () => {
           "quizScores",
           JSON.stringify([currentQuizScore, ...prevAllScores])
         );
+<<<<<<< HEAD
         setCardContent(quizTitle === "Financial Sentiment Analysis" ? "This is the content for Financial Sentiment Analysis." : "Default card content.");
 }, [quizState.totalScore]);
   //}, [quizState.totalScore]);
 
   
 
+=======
+
+      axios
+        .post("http://localhost:4000/quiz", { user_selections: quizState.userSelectedOptions })
+        .then((data) => {
+          console.log(data);
+        });
+  }, [quizState.totalScore]);
+>>>>>>> 46c90e5a46859704b799b90977ae188308f384bb
   return (
     <>
       <NavMenu />
