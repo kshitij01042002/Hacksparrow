@@ -37,12 +37,12 @@ const Welcome = () => {
     >
       <VuiBox display="flex" flexDirection="column" sx={{ height: "100%" }}>
         <VuiBox display="flex" flexDirection="column" mb="auto">
-          <VuiTypography color="white" variant="h3" fontWeight="bold" mb="3px">
+         <VuiTypography color="white" variant="h3" fontWeight="bold" mb="3px">
             Welcome back!
           </VuiTypography>
           <VuiTypography color="white" variant="button" fontWeight="regular">
             Nice to see you, Mark Johnson!
-          </VuiTypography>
+          </VuiTypography> 
         </VuiBox>
         <VuiBox justifySelf="flex-end">
           <VuiTypography

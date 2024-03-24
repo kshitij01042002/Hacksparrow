@@ -71,14 +71,50 @@ const CarInformations = () => {
 						})}
 						alignItems='center'>
 						<VuiBox sx={{ position: 'relative', display: 'inline-flex' }}>
+							<CircularProgress variant='determinate' value={40} size={170} color='info' />
+							<VuiBox display='flex' flexDirection='column' justifyContent='center' alignItems='center'>
+								<VuiBox component='img' src={GreenLightning} />
+								<VuiTypography color='white' variant='h2' mt='6px' fontWeight='bold' mb='4px'>
+									30%
+								</VuiTypography>
+								<VuiTypography color='text' variant='caption'>
+									Stocks
+								</VuiTypography>
+							</VuiBox>
+						</VuiBox>
+						<VuiBox sx={{ position: 'relative', display: 'inline-flex' }}>
 							<CircularProgress variant='determinate' value={60} size={170} color='info' />
 							<VuiBox display='flex' flexDirection='column' justifyContent='center' alignItems='center'>
 								<VuiBox component='img' src={GreenLightning} />
 								<VuiTypography color='white' variant='h2' mt='6px' fontWeight='bold' mb='4px'>
-									68%
+									52%
 								</VuiTypography>
 								<VuiTypography color='text' variant='caption'>
-									Current Load
+									Fixed Deposit
+								</VuiTypography>
+							</VuiBox>
+						</VuiBox>
+						<VuiBox sx={{ position: 'relative', display: 'inline-flex' }}>
+							<CircularProgress variant='determinate' value={20} size={170} color='info' />
+							<VuiBox display='flex' flexDirection='column' justifyContent='center' alignItems='center'>
+								<VuiBox component='img' src={GreenLightning} />
+								<VuiTypography color='white' variant='h2' mt='6px' fontWeight='bold' mb='4px'>
+									10%
+								</VuiTypography>
+								<VuiTypography color='text' variant='caption'>
+									Real Estate
+								</VuiTypography>
+							</VuiBox>
+						</VuiBox>
+						<VuiBox sx={{ position: 'relative', display: 'inline-flex' }}>
+							<CircularProgress variant='determinate' value={10} size={170} color='info' />
+							<VuiBox display='flex' flexDirection='column' justifyContent='center' alignItems='center'>
+								<VuiBox component='img' src={GreenLightning} />
+								<VuiTypography color='white' variant='h2' mt='6px' fontWeight='bold' mb='4px'>
+									8%
+								</VuiTypography>
+								<VuiTypography color='text' variant='caption'>
+									Bonds
 								</VuiTypography>
 							</VuiBox>
 						</VuiBox>
@@ -112,7 +148,7 @@ const CarInformations = () => {
 								mx: 'auto !important'
 							}
 						})}>
-						<Grid item xs={12} md={5.5} xl={5.8} xxl={5.5}>
+						{/* <Grid item xs={12} md={5.5} xl={5.8} xxl={5.5}>
 							<VuiBox
 								display='flex'
 								p='18px'
@@ -151,8 +187,8 @@ const CarInformations = () => {
 									<VuiBox component='img' src={carProfile} />
 								</VuiBox>
 							</VuiBox>
-						</Grid>
-						<Grid item xs={12} md={5.5} xl={5.8} xxl={5.5}>
+						</Grid> */}
+						{/* <Grid item xs={12} md={5.5} xl={5.8} xxl={5.5}>
 							<VuiBox
 								display='flex'
 								p='18px'
@@ -184,8 +220,8 @@ const CarInformations = () => {
 									/>
 								</VuiBox>
 							</VuiBox>
-						</Grid>
-						<Grid item xs={12} md={5.5} xl={5.8} xxl={5.5}>
+						</Grid> */}
+						{/* <Grid item xs={12} md={5.5} xl={5.8} xxl={5.5}>
 							<VuiBox
 								display='flex'
 								p='18px'
@@ -224,8 +260,8 @@ const CarInformations = () => {
 									<VuiBox component='img' src={WhiteLightning} />
 								</VuiBox>
 							</VuiBox>
-						</Grid>
-						<Grid item xs={12} md={5.5} xl={5.8} xxl={5.5}>
+						</Grid> */}
+						{/* <Grid item xs={12} md={5.5} xl={5.8} xxl={5.5}>
 							<VuiBox
 								display='flex'
 								p='18px'
@@ -234,7 +270,7 @@ const CarInformations = () => {
 									background: linearGradient(cardContent.main, cardContent.state, cardContent.deg),
 									borderRadius: '20px'
 								}}>
-								<VuiBox display='flex' flexDirection='column' mr='auto'>
+								 <VuiBox display='flex' flexDirection='column' mr='auto'>
 									<VuiTypography color='text' variant='caption' fontWeight='medium' mb='2px'>
 										This Week
 									</VuiTypography>
@@ -249,7 +285,7 @@ const CarInformations = () => {
 										})}>
 										1.342km
 									</VuiTypography>
-								</VuiBox>
+								</VuiBox> 
 								<VuiBox sx={{ maxHeight: '75px' }}>
 									<LineChart
 										lineChartData={lineChartDataProfile2}
@@ -257,7 +293,7 @@ const CarInformations = () => {
 									/>
 								</VuiBox>
 							</VuiBox>
-						</Grid>
+						</Grid> */}
 					</Grid>
 				</Stack>
 			</VuiBox>
